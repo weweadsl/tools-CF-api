@@ -1,0 +1,6 @@
+#### 取得 it 帳號下的所有 site 
+#### get DNS site list  , page 1, 2
+curl -X GET "https://api.cloudflare.com/client/v4/zones?page=1&per_page=100" \
+     -H "X-Auth-Email: < email >" \
+     -H "X-Auth-Key: < key >" \
+     -H "Content-Type: application/json"
