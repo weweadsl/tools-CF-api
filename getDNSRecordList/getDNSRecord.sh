@@ -7,7 +7,7 @@ key=
 numbers=`wc -l DNSList | awk  '{print $1}'`
 
 # 逐一行處理
-for (( n=0; n<=$numbers; n++ ))
+for (( n=1; n<=$numbers; n++ ))
 do
   zoneid=`sed  -n "${n}p" DNSList | awk '{print $2}'`
 
